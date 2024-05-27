@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Transfer with TensorFlow.js</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+  <h1>Style Transfer Demo</h1>
+  <input type="file" id="content-image-upload" accept="image/*">
+  <input type="file" id="style-image-upload" accept="image/*">
+  <button id="apply-style-button">Apply Style</button>
+  <div>
+    <h3>Content Image:</h3>
+    <img id="content-image" width="300" />
+  </div>
+  <div>
+    <h3>Style Image:</h3>
+    <img id="style-image" width="300" />
+  </div>
+  <div>
+    <h3>Stylized Image:</h3>
+    <canvas id="stylized-image" width="300" height="300"></canvas>
+  </div>
+  <script src="style-transfer-demo.js"></script>
+</body>
+</html>
